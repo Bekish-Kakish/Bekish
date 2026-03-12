@@ -26,6 +26,9 @@
 
 ```text
 Bekish/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -44,30 +47,3 @@ Bekish/
 │       ├── constants.js
 │       └── gameUtils.js
 └── README.md
-```
-
-## Запуск
-
-```bash
-npm install
-npm run dev
-```
-
-Production build:
-
-```bash
-npm run build
-npm run preview
-```
-
-## Управление
-
-- **Desktop:** стрелки или `W/A/S/D`
-- **Пауза:** `Space`
-- **Рестарт:** `R`
-- **Mobile:** touch-кнопки на экране
-
-## Готовность к деплою
-
-Проект настроен как стандартный production-ready Vite SPA.
-Можно деплоить в Vercel, Netlify, GitHub Pages (через build-output).
