@@ -47,37 +47,3 @@ Bekish/
 │       ├── constants.js
 │       └── gameUtils.js
 └── README.md
-```
-
-## Локальный запуск
-
-```bash
-npm install
-npm run dev
-```
-
-## Production build
-
-```bash
-npm run build
-npm run preview
-```
-
-## Деплой на GitHub Pages
-
-1. Убедитесь, что репозиторий называется **Bekish** (или обновите `base` в `vite.config.js`).
-2. В `vite.config.js` уже задано `base: '/Bekish/'` для корректной загрузки ассетов на Pages.
-3. Workflow `.github/workflows/deploy.yml` автоматически:
-   - собирает проект (`npm install && npm run build`),
-   - публикует **только `dist/`** как Pages artifact,
-   - деплоит сайт через `actions/deploy-pages`.
-4. В GitHub: **Settings → Pages → Build and deployment → Source = GitHub Actions**.
-5. После пуша в `main` сайт будет доступен по адресу:
-   - `https://bekish-kakish.github.io/Bekish/`
-
-## Управление
-
-- **Desktop:** стрелки или `W/A/S/D`
-- **Пауза:** `Space`
-- **Рестарт:** `R`
-- **Mobile:** touch-кнопки на экране
